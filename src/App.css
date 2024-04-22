@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto&family=Roboto+Condensed&family=Rubik&family=Young+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4dff4d;
+  --dark-color: #0d0d0d;
+}
+
+body {
+  background-color: #f8f8ff;
+  font-family: 'Poppins,sans serif';
+}
+
+.Nav_main {
+  background: var(--dark-color);
+
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 30px;
+  transition: .4s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar-collapse {
+  margin-left: 30px;
+}
+
+.nav-link {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  transition: .6s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.icons i {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 20px;
+  transition: .5s ease-in-out;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+button.btn1 {
+  --c: var(--primary-color);
+
+  box-shadow: 0 0 0 .1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background:
+    var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+button.btn1:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+
+}
+
+button.btn1:active {
+  box-shadow: 0 0 9e9q inset #0009;
+  background-color: var(--c);
+  color: #fff;
+}
+
+.home_main {
+  background-color: var(--dark-color);
+}
+
+.home_main h1 {
+  margin-top: 70px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home_main p {
+  color: #bebbbb;
+  font-size: 20px;
+}
+
+.home_img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+
+
+
+.button {
+  font-size: 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: var(--primary-color) 3px solid;
+  padding: 0.2em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--primary-color), 0 0 0.5em 0 var(--primary-color);
+  position: relative;
+}
+
+.button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+  filter: blur(1.15em);
+  opacity: 0.7;
+  transition: transform 0.5s linear;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 4em 0.6em var(--primary-color), 0 0 1em 0.2em #fff;
+  opacity: 0;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+}
+
+.button:hover,
+.button:focus {
+  color: var(#fff);
+  text-shadow: none;
+}
+
+.home_btns {
+  margin-bottom: 30px;
+}
+
+.delivery-coll {
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 50px 4px rgb(228, 227, 227);
+  transition: .5s ease-in-out;
+}
+
+.delivery-coll:hover {
+  cursor: pointer;
+  transform: scale(.86);
+  box-shadow: 0 0 8px 4px var(--primary-color);
+}
+
+.overview-call {
+  margin-top: 80px;
+}
+
+.overview-call h3 {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.overview-call h3:hover {
+  border-bottom: 3px solid var(--primary-color);
+  width: 30%;
+}
+
+.overview-call h1 {
+  font-size: 50px;
+}
+
+.overview-call p {
+  font-size: 18px;
+}
+
+.notes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes span {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.notes p {
+  font-weight: bold;
+}
+
+.receite-coll {
+  display: flex;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0 0 50px 4px rgb(228, 227, 227);
+  border-radius: 10px;
+  margin-top: 40px;
+
+}
+
+
+.img-fluid {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+
+.receite {
+  text-align: center;
+}
+
+.receite h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.receite p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.stars i:nth-child(-n +4) {
+  color: #FFFF00;
+  font-size: 1rem;
+}
+
+.stars i:hover,
+.receite button:hover {
+  cursor: pointer;
+  transform: scaleX(1.3);
+  transition: .6 ease-in-out;
+}
+
+.receite button {
+  margin-top: -100px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+}
+
+.receite button i {
+  margin-left: 8px;
+}
+
+.top_collections img {
+  border: 3px solid rgb(203, 202, 202);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.top_collections img:hover {
+  transform: scale(1.2);
+  transition: .6s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 8px 4px rgb(228, 227, 227);
+  opacity: 1;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: inherit !important;
+  margin-bottom: 80px !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color) !important;
+}
+
+.ourTeams_infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team_card {
+  margin-left: 10px;
+  background-color: rgb(228, 227, 227);
+  box-shadow: 5px 5px 6px 5px rgb(211, 211, 211);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.intro {
+  height: 180px;
+  width: 250px;
+  padding: 8px;
+  position: absolute;
+  margin-top: -130px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #fff;
+  transition: .6s ease-in-out;
+
+}
+
+.intro h1 {
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.intro p {
+  font-size: 15px;
+  opacity: 0;
+}
+
+.team_card:hover {
+  cursor: pointer;
+}
+
+.team_card:hover .intro {
+  margin-top: -130px;
+  background-color: black;
+}
+
+.team_card:hover .intro p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team_card:hover .intro h1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team_card:hover .intro h1 {
+  color: var(--primary-color);
+}
+
+.col_img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 70%;
+  font-size: 15px;
+
+}
+
+.badge i {
+  margin-right: 10px;
+}
+
+.col_text h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 20px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  font-size: 1.2em;
+
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all .6s ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, var(--primary-color), black);
+  transition: all .6s ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all .6s ease-in;
+}
+
+.social-icons a:hover i {
+
+  color: green;
+  background: linear-gradient(45deg, var(--primary-color), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .5S ease-in;
+}
+
+.footer {
+  background-color: black;
+  padding: 20px;
+}
+
+.footer-infos {
+  padding-left: 20px;
+}
+
+.footer-infos h2 {
+  color: var(--primary-color);
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.footer-infos p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer .navLinks {
+  padding-left: 80px;
+}
+
+.footer .navLinks h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-top: 20px;
+
+}
+
+.footer .navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.navLinks a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.footer_contact h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-top: 20px;
+}
+
+.footer_contact li {
+  list-style: none;
+  color: #fff;
+  line-height: 30px;
+
+}
+
+.footer_contact li i {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 8px;
+  font-weight: 800;
+}
+
+.end_footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.navbar-toggler {
+  border: 2px solid var(--primary-color);
+  /* Adds a visible border around the button */
+  background-color: var(--primary-color);
+  /* Change background if needed */
+  color: #fff;
+  /* Ensures the icon is white */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Customizes the hamburger icon to ensure it is visible */
+}
+
+/* Ensure visibility in different background scenarios */
+.navbar-dark .navbar-toggler {
+  border-color: #fff;
+  /* Makes the border white in dark-themed navbars */
+}
+
+/* Tablet devices (up to 768px) */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 24px;
+    /* Reduced font size for tablets */
+    margin-left: 20px;
+    /* Reduced margin */
+  }
+
+  .nav-link {
+    font-size: 18px;
+    /* Slightly smaller font size for nav links */
+    margin-left: 15px;
+    /* Reduced margin */
+  }
+
+  .icons i {
+    font-size: 20px;
+    /* Smaller icon size */
+    margin-left: 15px;
+    /* Reduced margin */
+  }
+
+  button.btn1 {
+    font-size: 14px;
+    /* Smaller button text */
+    padding: 8px 16px;
+    /* Adjust padding to fit smaller screens */
+  }
+
+  .home_main {
+    padding: 20px;
+    /* Adding some padding to the main home section */
+  }
+
+  .home_main h1 {
+    font-size: 40px;
+    /* Smaller font size for the main heading */
+    margin-top: 50px;
+    /* Slightly smaller top margin */
+  }
+
+  .home_main p {
+    font-size: 18px;
+    /* Smaller font size for paragraphs */
+  }
+
+  .button {
+    font-size: 1.2em;
+    /* Smaller button font size */
+    padding: 0.15em 0.8em;
+    /* Adjusted padding */
+  }
+
+  .delivery-coll {
+    padding: 1.5rem;
+    /* Reduced padding for more space efficiency */
+    box-shadow: 0 0 35px 3px rgb(228, 227, 227);
+    /* Slightly lighter shadow for a subtler effect */
+  }
+
+  .delivery-coll:hover {
+    transform: scale(0.9);
+    /* Slightly reduced scale transformation */
+    box-shadow: 0 0 8px 3px var(--primary-color);
+    /* Adjust box-shadow size */
+  }
+
+  .overview-call {
+    margin-top: 60px;
+    /* Slightly reduced top margin */
+  }
+
+  .overview-call h3 {
+    font-size: 24px;
+    /* Reduced font size for h3 */
+  }
+
+  .overview-call h3:hover {
+    width: 50%;
+    /* Increased width percentage to maintain visual balance */
+  }
+
+  .overview-call h1 {
+    font-size: 40px;
+    /* Reduced font size for h1 */
+  }
+
+  .overview-call p {
+    font-size: 16px;
+    /* Reduced font size for paragraphs */
+  }
+
+  .notes {
+    flex-direction: column;
+    /* Stack elements vertically for better space management */
+    align-items: flex-start;
+    /* Align items to the start */
+  }
+
+  .notes span {
+    font-size: 30px;
+    /* Reduced font size for spans */
+    margin-bottom: 10px;
+    /* Add margin to separate from paragraph */
+  }
+
+  .notes p {
+    text-align: center;
+    /* Center-align text for better readability */
+    width: 100%;
+    /* Full width to avoid text squeezing */
+  }
+
+  .overview_img img {
+    width: 400px;
+  }
+
+  .receite-coll {
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center-align the items */
+    margin: 10px;
+    /* Adjust margins for better spacing */
+    box-shadow: 0 0 30px 2px rgb(228, 227, 227);
+    /* Lighten the shadow for a softer effect */
+  }
+
+  .img-fluid {
+    width: 100%;
+    /* Make images responsive */
+    max-width: 300px;
+    /* Limit maximum width to maintain aspect ratio */
+    padding-bottom: 15px;
+    /* Adjust padding */
+  }
+
+  .receite h4 {
+    font-size: 24px;
+    /* Decrease font size for headings */
+  }
+
+  .receite p {
+    font-size: 18px;
+    /* Decrease font size for paragraphs */
+  }
+
+  .receite button {
+    font-size: 0.9rem;
+    /* Reduce button font size */
+    padding: 0.15rem 0.3rem;
+    /* Adjust padding */
+    margin-top: -50px;
+    /* Adjust the negative margin */
+  }
+
+  .top_collections img {
+    width: 100%;
+    /* Make images full width */
+    margin-bottom: 15px;
+    /* Slightly reduce the margin */
+    transition: transform .3s ease-in-out;
+    /* Speed up the transition for touch devices */
+  }
+
+  .top_collections img:hover {
+    transform: scale(1.1);
+    /* Reduce the scale effect to prevent layout shift */
+    box-shadow: 0 0 4px 2px rgb(228, 227, 227);
+    /* Softer shadow for less aggressive effect */
+  }
+
+  /* Adjust swiper pagination for better touch interaction */
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom {
+    margin-bottom: 40px;
+    /* Reduce bottom margin */
+    padding: 10px;
+    /* Adjust padding for easier interaction */
+  }
+}
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 20px;
+    /* Further reduced font size for mobile */
+    margin-left: 10px;
+    /* Less margin */
+  }
+
+  .navbar-collapse {
+    margin-left: 10px;
+    /* Less margin */
+  }
+
+  .nav-link {
+    font-size: 16px;
+    /* Smaller font size for better readability on mobile */
+    margin-left: 10px;
+    /* Less margin */
+  }
+
+  .icons i {
+    font-size: 18px;
+    /* Further reduced icon size */
+    margin-left: 10px;
+    /* Less margin */
+  }
+
+  button.btn1 {
+    font-size: 12px;
+    /* Smaller text on buttons for mobile */
+    padding: 6px 12px;
+    /* Smaller padding */
+  }
+
+  .home_main {
+    padding: 15px;
+    /* Further reduced padding for smaller screens */
+  }
+
+  .home_main h1 {
+    font-size: 30px;
+    /* Further reduced font size for the main heading */
+    margin-top: 30px;
+    /* Reduced top margin */
+  }
+
+  .home_main p {
+    font-size: 16px;
+    /* Further reduced font size for paragraphs */
+  }
+
+  .button {
+    font-size: 1em;
+    /* Even smaller button font size */
+    padding: 0.1em 0.6em;
+    /* Further adjusted padding */
+  }
+
+  .home_img {
+    width: 400px;
+  }
+
+  .home_img:hover {
+    transform: scale(1.05);
+    /* Less pronounced hover effect */
+  }
+
+  .delivery-coll {
+    padding: 2rem;
+    /* Further reduced padding for smaller screens */
+    box-shadow: 0 0 25px 2px rgb(228, 227, 227);
+    /* Even lighter shadow */
+  }
+
+  .overview-call {
+    margin-top: 40px;
+    /* Further reduce top margin for mobile */
+  }
+
+  .overview-call h3 {
+    font-size: 20px;
+    /* Smaller font size for H3 to fit mobile screens */
+  }
+
+  .overview-call h1 {
+    font-size: 28px;
+    /* Smaller header for mobile readability */
+  }
+
+  .overview-call p {
+    font-size: 14px;
+    /* Smaller text for mobile readability */
+  }
+
+  .notes {
+    flex-direction: column;
+    /* Ensure vertical layout on mobile */
+    align-items: center;
+    /* Center alignment for consistency */
+    margin-top: 10px;
+    /* Reduced spacing between elements */
+  }
+
+  .notes span {
+    font-size: 24px;
+    /* Reduce font size for note icons/spans */
+  }
+
+  .notes p {
+    text-align: center;
+    /* Center text alignment */
+    padding: 0 15px;
+    /* Padding to prevent text from touching the edges */
+  }
+
+  .overview_img img {
+    width: 300px;
+  }
+
+  .receite-coll {
+    width: 100%;
+    /* Each card takes full width of the screen */
+    margin: 10px 0;
+    /* Space between each card */
+    flex-direction: column;
+    /* Stack the content of each card vertically */
+    align-items: center;
+    /* Center-align the content for aesthetics */
+  }
+
+  .img-fluid {
+    width: 80%;
+    /* Slightly less than full width for visual padding */
+    margin-bottom: 20px;
+    /* Space below image */
+  }
+
+  .receite h4,
+  .receite p {
+    text-align: center;
+    /* Center-align text */
+  }
+
+  .receite-cart {
+    width: 100%;
+    /* Full width for cart area */
+  }
+
+  .receite-cart .row {
+    flex-direction: column;
+    /* Stack elements inside the cart vertically */
+    align-items: center;
+    /* Center-align these elements */
+  }
+
+  .receite-cart .col-5,
+  .receite-cart .col-7 {
+    width: 100%;
+    /* Full width for stars and button to stack them vertically */
+  }
+
+  .stars {
+    margin-bottom: 10px;
+    /* Space between stars and the button */
+  }
+
+  .receite button {
+    width: 50%;
+    /* Button width to make it visually appealing */
+    margin-bottom: 20px;
+    /* Space below the button */
+  }
+
+  .receites h1 {
+    font-size: 40px !important;
+  }
+
+  .text-end button {
+    margin-right: 300px !important;
+    padding: 5px !important;
+  }
+
+  .receite del {
+    font-size: 15px !important;
+  }
+
+  .top_collections img {
+    border-width: 2px;
+    /* Thinner border for smaller screens */
+    opacity: 0.9;
+    /* Slightly more opaque for better visibility */
+  }
+
+  .top_collections img:hover {
+    transform: none;
+    /* Disable scale transform to maintain layout stability on very small screens */
+    box-shadow: 0 0 2px 1px rgb(228, 227, 227);
+    /* Even softer shadow */
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom {
+    margin-bottom: 20px;
+    /* Further reduce bottom margin */
+    padding: 5px;
+    /* Smaller padding */
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    /* Ensure active bullet is clearly visible */
+  }
+
+  .top_collections .h1 {
+    font-size: 40px !important;
+  }
+
+  .ourTeams_infos {
+    display: flex;
+    flex-direction: column;
+    /* Ensure all cards are vertically aligned */
+    align-items: center;
+    /* Center align the cards for better visual appearance */
+  }
+
+  .team_card {
+    width: 95%;
+    /* Use most of the screen width for better visibility */
+    margin: 20px auto;
+    /* Add space between each card and center it horizontally */
+    display: flex;
+    flex-direction: column;
+    /* Stack contents of the card vertically */
+    align-items: center;
+    /* Align the contents in the center of the card */
+    padding: 20px;
+    /* Padding inside each card for spacing */
+    background-color: rgb(228, 227, 227);
+    /* Background color for visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+  }
+
+  .team_card img {
+    width: 100%;
+    /* Full width images within the card */
+    height: auto;
+    /* Keep image aspect ratio intact */
+    margin-bottom: 15px;
+    /* Space below the image */
+  }
+
+  .intro {
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Dark background for text visibility */
+    height: 100%;
+    color: #fff;
+    /* White text for contrast */
+    width: 80%;
+    /* Match width to card width */
+    padding-top: 200px;
+    /* Adequate padding for text */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    text-align: center;
+    /* Center-align text */
+    font-size: 14px;
+    /* Adjust font size for mobile readability */
+    line-height: 1.4;
+    /* Improve line spacing */
+    transition: none;
+    /* Disable transitions for a stable appearance */
+    opacity: 0.6;
+  }
+
+  .intro h1 {
+    font-size: 18px;
+    /* Larger font size for headers */
+    margin-top: -30px;
+    /* Space between header and paragraph */
+    color: #4dff4d;
+  }
+
+  .intro p {
+    opacity: 1;
+    /* Ensure paragraph is visible */
+    visibility: visible;
+    /* Ensure paragraph is not hidden */
+  }
+
+
+
+  .textimonials h1 {
+    font-size: 40px !important;
+  }
+
+  .col_text h2 {
+    font-size: 30px !important;
+  }
+
+  .col_text p {
+    font-size: 16px !important;
+  }
+
+  .footer-infos h2 {
+    font-size: 25px;
+  }
+
+  .footer-infos p {
+    font-size: 15px;
+  }
+
+  .navLinks h1 {
+    font-size: 25px !important;
+  }
+
+  .navLinks {
+    padding-left: 10px !important;
+  }
+
+  .footer_contact h1 {
+    font-size: 20px !important;
+  }
+
+  .end_footer {
+    font-size: 20px !important;
+  }
+
+  .navbar-toggler {
+    display: block;
+
+    /* Ensures the button is always visible on small screens */
+  }
+}
